@@ -1,0 +1,238 @@
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ background-color: white;
+}
+
+.signin-box {
+ background-color: #fff;
+ border-radius: 16px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ display: flex;
+ overflow: hidden;
+ width: 80%;
+}
+
+.signin-left {
+ flex: 1;
+ padding: 50px;
+}
+
+.signin-left h1 {
+ font-size: 28px;
+ color: #1a1a1a;
+ margin-bottom: 10px;
+}
+
+.signin-left p {
+ color: #555;
+ margin-bottom: 30px;
+}
+
+.google-btn {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ border: 2px solid #dadce0;
+ border-radius: 8px;
+ padding: 12px;
+ background-color: white;
+ cursor: pointer;
+ font-size: 16px;
+ color: #333;
+ font-weight: 500;
+ width: 100%;
+ margin-bottom: 20px;
+ transition: background 0.2s;
+}
+
+.google-btn:hover {
+ background-color: #f8f8f8;
+}
+
+.google-btn img {
+ width: 20px;
+ margin-right: 10px;
+ background: white;
+ border-radius: 50%;
+ padding: 2px;
+}
+
+.google-icon {
+ width: 20px;
+ height: 20px;
+ background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg') no-repeat center;
+ background-size: contain;
+}
+
+.divider {
+ display: flex;
+ align-items: center;
+ text-align: center;
+ color: #888;
+ margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+ content: "";
+ flex: 1;
+ height: 1px;
+ background: #ddd;
+}
+
+.divider:not(:empty)::before {
+ margin-right: 10px;
+}
+
+.divider:not(:empty)::after {
+ margin-left: 10px;
+}
+
+.signin-btn {
+ background-color: #0b52e4;
+ color: white;
+ border: none;
+ padding: 14px;
+ border-radius: 8px;
+ font-size: 16px;
+ font-weight: 500;
+ width: 100%;
+ cursor: pointer;
+ transition: background 0.2s;
+}
+
+.signin-btn:hover {
+ background-color: #083cb4;
+}
+
+.register-text {
+ text-align: center;
+ margin-top: 20px;
+ color: #444;
+}
+
+.register-text a {
+ color: #0b52e4;
+ font-weight: 500;
+ text-decoration: none;
+}
+
+.register-text a:hover {
+ text-decoration: underline;
+}
+
+.signin-right {
+ flex: 1;
+ background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+}
+
+.divider2 {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.divider2::before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ width: 1px;
+ height: 25vh;
+ margin-top: 200px;
+ border-left: 2px dotted #ccc;
+}
+
+.divider2::after {
+ content: "";
+ position: absolute;
+ left: 50%;
+ width: 1px;
+ margin-top: -200px;
+ height: 25vh;
+ border-left: 2px dotted #ccc;
+}
+
+.divider2 span {
+ background: #fff;
+ padding: 20px;
+ font-style: italic;
+ color: #444;
+}
+
+.login-box {
+ width: 350px;
+}
+
+.login-form {
+ display: flex;
+ flex-direction: column;
+}
+
+label {
+ margin-top: 10px;
+ color: #333;
+ font-size: 14px;
+}
+
+input {
+ margin: 5px 0 10px 0;
+ padding: 10px;
+ border: none;
+ border-bottom: 2px solid #0078ff;
+ outline: none;
+ font-size: 14px;
+}
+
+.forgot-link {
+ font-size: 12px;
+ color: #0078ff;
+ text-decoration: none;
+ align-self: flex-end;
+ margin-bottom: 10px;
+}
+
+.captcha {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border: 1px solid #ddd;
+ padding: 10px;
+ border-radius: 4px;
+ margin: 10px 0;
+}
+
+.success {
+ display: flex;
+ align-items: center;
+ color: #27ae60;
+ font-weight: 600;
+}
+
+.checkmark {
+ margin-right: 5px;
+ font-size: 18px;
+}
+
+.cloudflare-logo {
+ width: 100px;
+}
+
+.login-btn {
+ background-color: #0078ff;
+ color: #fff;
+ border: none;
+ padding: 12px;
+ font-weight: bold;
+ border-radius: 3px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+.login-btn:hover {
+ background-color: #005fcc;
+}

@@ -1,0 +1,66 @@
+.jobsearch-container {
+ display: flex;
+ align-items: start;
+ width: 100%;
+ justify-content: center;
+}
+
+.filters {
+ width: 20%;
+ padding: 20px;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results {
+ width: 70%;
+ background-color: white;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+ margin-bottom: 20px;
+}
+
+.filter-section label {
+ font-weight: bold;
+}
+
+.job-list {
+ margin-top: 20px;
+}
+
+.job-item {
+ display: flex;
+ justify-content: space-between;
+ padding: 15px;
+ background-color: #f9f9f9;
+ margin-bottom: 10px;
+ border-radius: 5px;
+}
+
+.job-item h3 {
+ margin: 0;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.job-item p {
+ margin: 5px 0;
+}
+
+.salary {
+ font-weight: bold;
+ color: #3c763d;
+}
+
+.job-alert,
+.gov-support {
+ background-color: #ffeb3b;
+ padding: 10px;
+ border-radius: 5px;
+ margin: 20px 0;
+}
