@@ -18,7 +18,7 @@
 
 
 
-    <!-- Salary -->
+    <!-- Salary test git-->
     <% if (!string.IsNullOrEmpty(salary_string)) { %>
         <p><strong>Salary:</strong> <%: salary_string %></p>
     <% } else if (min_annual_salary.HasValue || max_annual_salary.HasValue) { %>
