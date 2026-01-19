@@ -135,6 +135,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminVideos.aspx" />
     <Content Include="ApplyJob.aspx" />
     <Content Include="App_Data\JobPortal.mdf" />
     <Content Include="App_Data\JobPortal_log.ldf">
@@ -157,6 +158,9 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CourseDetail.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="CoursesCSS.css" />
     <Content Include="CreateJobPost.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -221,6 +225,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="signup.css" />
     <Content Include="Site.Master" />
+    <Content Include="VideoLearn.aspx" />
     <Content Include="zoeytables.sql" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -228,6 +233,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminVideos.aspx.cs">
+      <DependentUpon>AdminVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminVideos.aspx.designer.cs">
+      <DependentUpon>AdminVideos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ApplyJob.aspx.cs">
       <DependentUpon>ApplyJob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -237,6 +249,20 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CourseDetail.aspx.cs">
+      <DependentUpon>CourseDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseDetail.aspx.designer.cs">
+      <DependentUpon>CourseDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreateJobPost.aspx.cs">
       <DependentUpon>CreateJobPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,6 +294,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VideoLearn.aspx.cs">
+      <DependentUpon>VideoLearn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VideoLearn.aspx.designer.cs">
+      <DependentUpon>VideoLearn.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
