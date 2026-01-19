@@ -1,4 +1,32 @@
-﻿SET IDENTITY_INSERT Jobs ON;
+﻿CREATE TABLE Jobs (
+    JobId             BIGINT         IDENTITY (1, 1) NOT NULL,
+    job_title         NVARCHAR (200) NULL,
+    description       NVARCHAR (MAX) NULL,
+    company           NVARCHAR (200) NULL,
+    location          NVARCHAR (200) NULL,
+    salary_string     NVARCHAR (100) NULL,
+    min_annual_salary INT            NULL,
+    max_annual_salary INT            NULL,
+    date_posted       DATETIME       NULL,
+    final_url         NVARCHAR (500) NULL,
+    source_url        NVARCHAR (500) NULL,
+    isUserCreated     BIT            NULL,
+    UserId            INT            NULL,
+    CONSTRAINT PK_Jobs PRIMARY KEY CLUSTERED (JobId ASC)
+);
+
+CREATE TABLE SavedJobs (
+    SavedJobId INT      IDENTITY (1, 1) NOT NULL,
+    UserId     INT      NOT NULL,
+    JobId      BIGINT   NOT NULL,
+    SavedAt    DATETIME DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK_SavedJobs PRIMARY KEY CLUSTERED (SavedJobId ASC),
+    CONSTRAINT UQ_User_Job UNIQUE NONCLUSTERED (UserId ASC, JobId ASC),
+    CONSTRAINT FK_SavedJobs_Jobs FOREIGN KEY (JobId) REFERENCES Jobs (JobId)
+);
+
+
+SET IDENTITY_INSERT Jobs ON;
 INSERT INTO Jobs (    JobId,    job_title,    description,    company,    location,    salary_string,    min_annual_salary,    max_annual_salary,    date_posted,    final_url,    source_url,    isUserCreated,    UserId) VALUES (594884714, N'Travel Monitor Tech job in Cartersville, GA - Make $1,024 - $1,247/week', N'**Aya Healthcare has an immediate opening for the following position: Monitor Tech in Cartersville, GA.**
 We’ll work with you to build the healthcare career of your dreams. Whether you want a job close to home or across the country, we’ve got you.
   
