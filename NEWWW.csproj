@@ -164,10 +164,12 @@
     <Content Include="CreateJobPost.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GoogleAuth.aspx" />
     <Content Include="joblisting.css" />
     <Content Include="JobListingMetadata.txt" />
     <Content Include="JobListingResult.aspx" />
     <Content Include="jobsearch.css" />
+    <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -273,12 +275,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GoogleAuth.aspx.cs">
+      <DependentUpon>GoogleAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoogleAuth.aspx.designer.cs">
+      <DependentUpon>GoogleAuth.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JobListingResult.aspx.cs">
       <DependentUpon>JobListingResult.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JobListingResult.aspx.designer.cs">
       <DependentUpon>JobListingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
